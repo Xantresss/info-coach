@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O grze</title>
+    <link rel="stylesheet" href="../styl4.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 /5</div>
+      <img src="../iamges/toplane.jpeg" style="width:100%">
+      <div class="text">Top Lane</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="../iamges/jungle.webp" style="width:100%">
+      <div class="text">Jungle</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="../iamges/mid.png" style="width:100%">
+      <div class="text">Mid lane</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 /5</div>
+        <img src="../iamges/botom.webp" style="width:100%">
+        <div class="text">Bottom Lane</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5/5</div>
+        <img src="../iamges/support.png" style="width:100%">
+        <div class="text">Support</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+    
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    </header>
+    
+    <section>
+      <div class="oliniach" data-aos="fade-up-right" data-aos-duration="2000">
+        <h2>Top lane</h2>
+        <div class="text-container">
+          <div class="text-box" >
+            <h3>Postacie</h3>
+            <p>
+              Górna aleja to linia dla Gigachadów jak trolujesz każdą grę to nawet trener ci nie pomoże ale jak nie przejdziesz, dalej to nie wiesz co tracisz.
+              Jest tam około 46 postaci od lalki z nożycami przez eloktorstatcznego Yorldla aż do ciemnoskórego potężnego..... . Więc nie pytaj "Czym zagrać?"
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Jak grać?</h3>
+            <p>
+              Top lane często jest uważany za najłatwiejszą linię do grania, ale nie jest linią dla idiotów. Dlatego dowiedz się jak powinieneś grać swoją postacią i używaj wardów.<sub>(prosze!)</sub> Nie wierz w stereotypy że do topa się nie gra. Twój jungler do ciebie nie gra bo pushujesz kretynie. Dla przeciwnego leśnika jesteś tylko łatwym kąskiem. Przestań umierać mając dwa wardy na stacku.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Skąd wiedzieć jak grać postacią?</h3>
+            <p>
+              Wejdź na youtube.com wpisz nazwę swojej postaci i oglądaj. To takie proste! Jeśli chodzi o podstawy grania na górnej alei pokaże ci to w zakładce "coaching"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    
+    <section>
+      <div class="oliniach" data-aos="fade-up-right" data-aos-duration="2000">
+        <h2>Jungle</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>Postacie</h3>
+            <p>
+              W lesię mamy większe zróżnicowanie herosów. Możesz grać wspierającym,bruzerem, strzelcem, magiem, lub tankiem. Mozesz też grać jeleniem z różdżką. 
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Jak grać?</h3>
+            <p>
+              W sezonie 13 nie trzeba umieć grać lasu, jest banalnie prosta, jednak cały czas trafiają się idioci. Co musisz wiedzieć. Zrozum kto może pociągnąć twoją rozgrywkę i graj wokół niego. Daj informacje dla drugiej strony mapy że on cię raczej nie zobaczy. Pomagaj wszystkim innym po trochu, szukaj okazji na dobrego ganka, nie zapomnij o zbieraniu zasobów.<sub>(chyba że grasz Jarvanem!)</sub>
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Skąd wiedzieć jak grać postacią?</h3>
+            <p>
+              Chyba cię nie zaskoczę jak powiem że masz internet? W lesie musisz wiedzieć czy ty ciągniesz grę czy twoje aleje. Czy ty bierzesz swoje zasoby czy komuś innemy bardziej się przydadzą. Najtrudniejsze w graniu w Jungli jest używania mózgu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    
+    <section>
+      <div class="oliniach" data-aos="fade-up-right" data-aos-duration="2000">
+        <h2>Midlane</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>Postacie</h3>
+            <p>
+              tutaj raczej wielkiej filozifii nie ma albo zabijasz w early albo kierujesz late game. Zdarzają się oczywiście wyjątki. Możesz być pomostem z przejscią od early game-u w late game i być ostoją swojej ekipy w środkowej fazie meczu. Jak i również zabijaką od samego początku rozgrywki lub musisz otrzymywać zasoby żeby twój late game był jak najszybciej, ponieważ jesteś warunkiem zwycięstwa w twojej kompozycji.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Jak grać?</h3>
+            <p>
+              W zależności od postaci albo robisz prio pushujesz i jesteś dostępny dla swoich bocznych alejek i junglera albo cię nie ma i łączysz się z serwerem w 30 minucie. 
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Skąd wiedzieć jak grać postacią?</h3>
+            <p>
+              Musisz zrozumieć kiedy twoj postać ma największy potencjał, umieć zarządzać falą, i używać dużo pingów.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <div class="oliniach" data-aos="fade-up-right" data-aos-duration="2000">
+        <h2>ADC</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>Postacie</h3>
+            <p>
+              Cięzko żeby było nudniej. Postacie papierowate, mające w miarę duże obrażenia z dystansu, jednakże prawie każda postać w zasięgu przeciwnego górnego , umiera.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Jak grać?</h3>
+            <p>
+              Nie grać.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Skąd wiedzieć jak grać postacią?</h3>
+            <p>
+              każdy adc jest prawie taki sam więc jedyne co musisz wiedzieć czy wygrywasz z przeciwnikiem w danym momencie czy nie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <div class="oliniach" data-aos="fade-up-right" data-aos-duration="2000">
+        <h2>Support</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>Postacie</h3>
+            <p>
+              Różnorodność jest dosyć duża, ponieważ pojawiają się tam magowie, postaci wchodzące w drużynę przeciwną, postacie broniące twoją kompozycje i lulu.<sub>(czyli ardenty)</sub>
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Jak grać?</h3>
+            <p>
+              w zależności od typu postaci możesz robić presję na lini siedząc w krzaku, możesz schodzić do innych alejek, możesz też wchodzić w przeciwnika, lub być artylerią i głównymi obrażeniami waszej dolnej alei.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Skąd wiedzieć jak grać postacią?</h3>
+            <p>
+              tutaj użyteczne jest oglądanie streamerów i analiza ich rozgrywki.<a target="_blank" href="https://www.twitch.tv/trymbilol"><img src="../iamges/arrow-small-right.png"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <div class="powrot">
+    <a href="../pages/glowna.html"><img src="../iamges/icons8-home-100.png"></a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
